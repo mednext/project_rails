@@ -1,0 +1,36 @@
+<h1>Edit user</h1>
+
+
+
+<%= form_for :depense, url: depenses_path   do |f| %>
+
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+
+<p>
+
+  <%= f.label :montant%>
+  <%= f.text_field :montant  %>
+
+</p>
+
+
+<p>
+  <%= f.label :payer %>
+  <%= f.text_field :payer %>
+</p>
+
+<p>
+  <%= f.label :benef%>
+  <%= f.text_field :benef %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
+
+
+<% end %>
+
+<%= link_to 'Back', users_path %>
